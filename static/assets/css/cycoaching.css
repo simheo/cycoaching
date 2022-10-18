@@ -1,0 +1,108 @@
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: #181818;
+}
+
+h1, h2, h3, nav a {
+    font-family: 'PT Sans', sans-serif;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#logo {
+    display: flex;
+    align-items: baseline;
+}
+
+#logo img {
+    width: 60px;
+    height: 60px;
+}
+
+#menu {
+    display: flex;
+    list-style-type: none;
+}
+
+#menu li {
+    margin-right: 15px;
+}
+
+#menu a {
+    font-size: 1.3em;
+    padding-bottom: 3px;
+    color: #181818;
+    text-decoration: none;
+}
+
+/* Section */
+.section_principale {
+    background-image: url('../img/image_accueil.jpg');
+    background-color: #cccccc;
+    opacity: 0.85;
+    height: 800px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.section_principale {
+    color: white;
+    text-align: center;
+}
+
+.section_principale h2 {
+    font-size: 4em;
+}
+
+.section_principale h3 {
+    font-size: 2em;
+}
+
+#section_principale_texte {
+    margin-top: 200px;
+}
+
+.conteneur {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.carte-cat-coaching {
+    margin: 20px;
+    background-color: var(--color-cy-light);
+    text-align: justify;
+    border-radius: 10px;
+    border: 3px none solid;
+    width: 45%; 
+}
+
+.carte-cat-coaching h3 {
+    text-align: center;
+}
+
+.carte-cat-coaching p {
+    padding: 10px;
+}
+
+/* Footer */
+
+/* Colors */
+:root {
+    --color-cy-light: #81bdf4;
+    --color-cy-dark: #2c5983;
+}
+
+.color-cy-dark {
+    color: #2c5983;
+}
