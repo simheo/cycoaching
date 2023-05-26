@@ -1,0 +1,223 @@
+/* Import url font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+/* Custom colors */
+:root {
+  --primary-color: #FF5500;
+  --secondary-color: #4B0082;
+  --background-color: #FFFFFF;
+  --secondary-background-color: #333333;
+}
+  
+/* Réinitialisation des styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Styles généraux */
+  body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    background-color: #f1f1f1;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  header {
+    background-color: var(--primary-color);
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+  }
+  
+  section {
+    padding: 40px;
+    text-align: center;
+  }
+
+  .background-container {
+    position: relative;
+  }
+  
+  .background-image {
+    background-image: url('../img/image_accueil.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 350px 0;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Modifier l'opacité en ajustant la valeur du dernier paramètre */
+  }
+
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+  }
+
+  .text-overlay h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  /* Sections */
+  .services {
+    background-color: var(--background-color);
+  }
+  .coaching-methode {
+    background-color: var(--secondary-background-color);
+  }
+
+  .coaching-methode p {
+    color: var(--background-color);
+  }
+
+  section h2 {
+    color: var(--primary-color);
+  }
+
+  .services-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .service-container {
+    flex: 0 0 23%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+  }
+
+  #avis {
+    text-align: center;
+  }
+  /* --------------------------------------------------------------- */
+  /* Review cards */
+  .review-card-container {
+    display: flex;
+    justify-content: center; /* Alignement horizontal au centre */
+    align-items: flex-start; /* Alignement vertical en haut */
+    overflow-x: auto; /* Permet le défilement horizontal */
+    width: 100%; /* Ajuste la largeur selon tes besoins */
+  }
+  
+  .review-wrapper {
+    display: flex;
+    padding: 10px; /* Espacement entre les avis */
+  }
+
+  .review-card {
+    flex: 0 0 300px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+  }
+
+  
+  .review-card p {
+    text-align: left; /* Aligne le texte à gauche */
+  }
+  
+  .review-card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .review-card-header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .review-card-info h4 {
+    margin: 0;
+  }
+  
+  .review-card-info .rating {
+    color: #888;
+  }
+  
+  .review-card-content {
+    font-size: 14px;
+    color: #555;
+    justify-content: flex-start;
+  }
+
+  .star {
+    color: #ffd700; /* Couleur des étoiles */
+  }
+  
+  .star {
+    font-size: 18px; /* Taille des étoiles */
+    margin-right: 2px; /* Espacement entre les étoiles */
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /* ------------------------------------- */
+  /* Media Queries */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 28px;
+    }
+  
+    p {
+      font-size: 16px;
+    }
+  
+    .service {
+      flex-basis: 100%;
+    }
+  }
+  
