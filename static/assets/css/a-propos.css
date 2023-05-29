@@ -1,0 +1,46 @@
+.about-content {
+    display: flex;
+    margin-top: 50px;
+  }
+  
+.column-image {
+    flex: 1;
+    margin-left: 100px;
+}
+
+.column-text {
+    flex: 1;
+    margin-right: 100px;
+}
+
+.image {
+    text-align: center;
+}
+
+.text {
+    text-align: left;
+    padding: 0 20px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.elegant-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+  
+.elegant-list li::before {
+    content: "•";
+    margin-right: 5px;
+}
+
+.elegant-list-first-p {
+    margin-bottom: 5px;
+}
+
+.image img {
+    width: 50%; /* Ajustez la largeur selon vos besoins */
+    height: auto; /* Maintient le ratio d'aspect de l'image */
+  }
