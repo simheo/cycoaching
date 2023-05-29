@@ -2,87 +2,98 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="../static/assets/css/cycoaching.css"/>
+    <link rel="stylesheet" href="../static/assets/css/style.css"/>
     <link rel="stylesheet" href="../static/assets/css/tarif.css"/>
     <title>Coach Sportif Toulouse - CYCoaching</title>
 </head>
 
 <body>
     <header>
-        <div id="logo">
+        <!-- <div id="logo">
             <img src="../static/assets/img/logo_cy_no_bg.png" alt="logo"/>
             <h1>CYCoaching</h1>
-        </div>
+        </div> -->
         <nav>
             <ul id="menu">
                 <li><a href="index.html">Coaching</a></li>
-                <li><a href="#">Qui suis-je ?</a></li>
-                <li><a active href="#">Tarifs</a></li>
+                <li><a href="a-propos.html">Qui suis-je ?</a></li>
                 <li><a href="#">Résultats</a></li>
+                <li><a active href="#">Tarifs</a></li>
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">Blog</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="prix">
-      <div class="prix_carte">
-        Des offres de coaching encadré en individuel ou en groupe
-        <button type="button" class="collapsible">Coaching individuel</button>
-        <div class="content">
-          <ul>
-            <li>A l'unité <b>50€</b></li>
-            <li>Carnet de 10 séances <b>450€</b></li>
-            <li>Carnet de 20 séances + 1 accessoire fitness <b>900€</b></li>
-          </ul>
-        </div>
-    
-        <button type="button" class="collapsible">Coaching mini-groupe (2-5 personnes)</button>
-        <div class="content">
-          <ul>
-            <li>Pour 2 personnes <b>30€/pers</b></li>
-            <li>Pour 3 personnes <b>25€/pers</b></li>
-            <li>Pour 4/5 personnes <b>20€/pers</b></li>
-          </ul>
-        </div>
-      </div>
-  
-      <div class="prix_carte">
-        Des programmes à distance sont également proposés
-  
-        <button type="button" class="collapsible">Programme basique (débutant)</button>
-        <div class="content">
-            <ul>
-              <li>Programme seul (8 semaines) <b>69€</b></li>
-              <li>Programme 8 semaines + 1 séance de présentation + Tests <b>99€</b></li>
-            </ul>
+      <section>
+          <h2>Tarifs</h2>
+          <!-- <div class="row">
+            <div class="column">
+              <img src="../static/assets/img/coaching-individuel.jpg" alt="Séance de coaching individuel">
+            </div>
+            <div class="column">
+              <p>Texte de description du coach...</p>
+            </div>
+          </div> -->
+          <div class="row">
+            <div class="column">
+              <img src="../static/assets/img/coaching-groupe.jpg" alt="Séance de coaching en groupe">
+            </div>
+            <div class="column">
+            <div class="card">
+              <div class="card-header">
+                <h3>Coaching mini-groupe (2-5 personnes)</h3>
+              </div>
+              <div class="card-content">
+                <p>Pour deux personnes : <span class="bold">30€ par personne</span></p>
+                <hr class="separator">
+                <p>Pour trois personnes : <span class="bold">25€ par personne</span></p>
+                <hr class="separator">
+                <p>Pour plus de quatre personnes : <span class="bold">20€ par personne</p>
+                <!-- Ajoutez autant de lignes de contenu que nécessaire -->
+              </div>
+            </div>
           </div>
-    
-        <button type="button" class="collapsible">Programme personnalisé</button>
-        <div class="content">
-            <ul>
-            <li>Programme 8 semaines + 1 séance encadrée + Tests + Analyse vidéo des mouvements (4x/mois) <b>149€</b></li>
-            </ul>
+      </section>
+
+      <section>
+        <div class="column">
+          <div class="card">
+            <div class="card-header">
+              <h3>Coaching mini-groupe (2-5 personnes)</h3>
+            </div>
+            <div class="card-content">
+              <p>Pour deux personnes : <span class="bold">30€ par personne</span></p>
+              <hr class="separator">
+              <p>Pour trois personnes : <span class="bold">25€ par personne</span></p>
+              <hr class="separator">
+              <p>Pour plus de quatre personnes : <span class="bold">20€ par personne</p>
+                <!-- Ajoutez autant de lignes de contenu que nécessaire -->
+              </div>
+            </div>
+            <div class="row">
+              <div class="column">
+                <img src="../static/assets/img/coaching-groupe.jpg" alt="Séance de coaching en groupe">
+            </div>
         </div>
-      </div>
-    </section>
-
-    <script>
-        var coll = document.getElementsByClassName("collapsible");
-        var i;
-        
-        for (i = 0; i < coll.length; i++) {
-          coll[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var content = this.nextElementSibling;
-            if (content.style.display === "block") {
-              content.style.display = "none";
-            } else {
-              content.style.display = "block";
-            }
-          });
-        }
-    </script>
-
+      </section>
+      
+      <footer>
+        <div class="footer-container">
+          <div class="footer-links">
+            <a href="index.html">Coaching</a>
+            <a href="#">Qui suis-je ?</a>
+            <a href="#">Résultats</a>
+            <a href="tarif.html">Tarifs</a>
+            <a href="#">Contact</a>
+            <a href="#">Blog</a>
+          </div>
+          <div class="footer-social-icons">
+            <a href="#"><i class="fab fa-instagram"></i> cycoaching</a>
+            <a href="#"><i class="fas fa-phone"></i> 0612345678</a>
+          </div>
+        </div>
+        <p class="footer-text">Cy Coaching</p>
+    </footer>
 </body>
 </html>

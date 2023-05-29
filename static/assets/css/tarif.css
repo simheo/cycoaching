@@ -1,36 +1,71 @@
- /* Style the button that is used to open and close the collapsible content */
-.collapsible {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
+.row {
+  display: flex;
+  align-items: center;
+  /* max-width: 800px; */
+  /* margin: 0 auto; */
+}
+
+.column {
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.column img {
+  max-width: 100%;
+  height: auto;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   text-align: left;
-  outline: none;
-  font-size: 15px;
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .collapsible:hover {
-  background-color: #ccc;
+.text li {
+  margin-left: 50px;
 }
 
-/* Style the collapsible content. Note: hidden by default */
-.content {
-  padding: 0 18px;
-  display: none;
-  overflow: hidden;
-  background-color: #f1f1f1;
+.bold {
+  font-weight: bold;
 }
 
-#prix {
-  /* display: flex; */
-  margin-top: 10%;
-  margin-left: 25%;
-  width: 50%;
+.elegant-list {
+  list-style-type: none;
+  padding-left: 0;
 }
 
-.prix_carte {
-  margin-top: 10%;
+.elegant-list li::before {
+  content: "•";
+  margin-right: 5px;
+}
+
+.elegant-list-first-p {
+  margin-bottom: 5px;
+}
+
+.card {
+  width: 75%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.card-header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.card-content {
+  padding: 10px;
+}
+
+.separator {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 10px 0;
 }
