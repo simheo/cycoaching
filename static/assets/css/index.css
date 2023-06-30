@@ -1,0 +1,134 @@
+/* --------------------------------------------------------------- */
+/* Image de couverture */
+.background-container {
+    position: relative;
+  }
+  
+  .background-image {
+    background-image: url('../img/image_accueil.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 350px 0;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Modifier l'opacité en ajustant la valeur du dernier paramètre */
+  }
+
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+  }
+
+  .text-overlay h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    }
+
+/* --------------------------------------------------------------- */
+/* Sections */
+.services {
+    background-color: var(--background-color);
+}
+.coaching-methode {
+    background-color: var(--secondary-background-color);
+}
+
+.coaching-methode p {
+    color: var(--background-color);
+}
+
+/* --------------------------------------------------------------- */
+/* Avis */
+#avis {
+    text-align: center;
+  }
+  /* --------------------------------------------------------------- */
+  /* Review cards */
+  .review-card-container {
+    display: flex;
+    justify-content: center; /* Alignement horizontal au centre */
+    align-items: flex-start; /* Alignement vertical en haut */
+    overflow-x: auto; /* Permet le défilement horizontal */
+    width: 100%; /* Ajuste la largeur selon tes besoins */
+  }
+  
+  .review-wrapper {
+    display: flex;
+    padding: 10px; /* Espacement entre les avis */
+  }
+
+  .review-card {
+    flex: 0 0 300px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+  }
+
+  
+  .review-card p {
+    text-align: left; /* Aligne le texte à gauche */
+  }
+  
+  .review-card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .review-card-header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .review-card-info h4 {
+    margin: 0;
+  }
+  
+  .review-card-info .rating {
+    color: #888;
+  }
+  
+  .review-card-content {
+    font-size: 14px;
+    color: #555;
+    justify-content: flex-start;
+  }
+
+  .star {
+    color: #ffd700; /* Couleur des étoiles */
+  }
+  
+  .star {
+    font-size: 18px; /* Taille des étoiles */
+    margin-right: 2px; /* Espacement entre les étoiles */
+  }
+
+/* --------------------------------------------------------------- */
+/* Button */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FF5500;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  
+  .button:hover {
+    background-color: #FF4400;
+  }
