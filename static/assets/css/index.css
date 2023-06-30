@@ -68,7 +68,7 @@ section {
   justify-content: center; /* Alignement horizontal au centre */
   align-items: flex-start; /* Alignement vertical en haut */
   overflow-x: auto; /* Permet le défilement horizontal */
-  width: 100%; /* Ajuste la largeur selon tes besoins */
+  width: 80%; /* Ajuste la largeur selon tes besoins */
 }
 
 .review-wrapper {
