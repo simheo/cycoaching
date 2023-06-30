@@ -5,7 +5,7 @@
 /* Custom colors */
 :root {
   --primary-color: #FF5500;
-  --secondary-color: #4B0082;
+  --secondary-color: #4f6e97;
   --background-color: #FFFFFF;
   --secondary-background-color: #333333;
 }
@@ -115,6 +115,7 @@
     padding-left: 20px;
   }
 
+  /* --------------------------------------------------------------- */
   /* Sections */
   .services {
     background-color: var(--background-color);
@@ -212,7 +213,8 @@
     font-size: 18px; /* Taille des étoiles */
     margin-right: 2px; /* Espacement entre les étoiles */
   }
-  
+
+  /* --------------------------------------------------------------- */
   /* Footer */
   footer {
     background-color: var(--secondary-background-color);
