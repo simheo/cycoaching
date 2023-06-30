@@ -37,11 +37,19 @@
 
 /* --------------------------------------------------------------- */
 /* Sections */
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .services {
     background-color: var(--background-color);
+    height: 500px;
 }
 .coaching-methode {
     background-color: var(--secondary-background-color);
+    height: 500px;
 }
 
 .coaching-methode p {
@@ -127,6 +135,7 @@
   color: white;
   text-decoration: none;
   border-radius: 4px;
+  max-width: 300px;
 }
 
 .button:hover {
