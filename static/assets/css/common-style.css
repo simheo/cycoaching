@@ -1,0 +1,156 @@
+/* --------------------------------------------------------------- *
+/* Import url font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+/* --------------------------------------------------------------- */
+/* Custom colors */
+:root {
+--primary-color: #FF5500;
+--secondary-color: #4f6e97;
+--background-color: #FFFFFF;
+--secondary-background-color: #333333;
+}
+
+/* --------------------------------------------------------------- */
+/* Réinitialisation des styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* --------------------------------------------------------------- */
+/* Styles généraux */
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  background-color: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+}
+
+h1, h2, h3 {
+  font-family: 'Raleway', sans-serif;
+}
+
+header {
+  background-color: var(--primary-color);
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+}
+
+section {
+  padding: 40px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+li {
+  font-size: 18px;
+  padding-left: 20px;
+}
+
+/* --------------------------------------------------------------- */
+/* Sections */
+section h2 {
+  color: var(--primary-color);
+}
+
+.services-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.service-container {
+  flex: 0 0 23%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+/* --------------------------------------------------------------- */
+/* Footer */
+footer {
+  background-color: var(--secondary-background-color);
+  color: #fff;
+  padding: 20px 0;
+  flex-shrink: 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.footer-social-icons a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.footer-text {
+  text-align: center;
+  margin-top: 10px;
+}
+  
+/* ------------------------------------- */
+/* Media Queries */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .service {
+    flex-basis: 100%;
+  }
+}
+  
