@@ -44,7 +44,7 @@ h1, h2, h3 {
 
 header {
   background-color: var(--primary-color);
-  padding: 10px;
+  padding: 0.7em;
 }
 
 nav ul {
@@ -55,17 +55,17 @@ nav ul {
 
 nav ul li {
   display: inline-block;
-  margin-right: 10px;
+  margin-right: 1em;
 }
 
 nav ul li a {
   color: #fff;
   text-decoration: none;
-  padding: 5px;
+  padding: 0.8em;
 }
 
 section {
-  padding: 40px;
+  padding: 2em 1em;
   text-align: center;
 }
 
@@ -95,7 +95,7 @@ section h2 {
 footer {
   background-color: var(--secondary-background-color);
   color: #fff;
-  padding: 20px 0;
+  padding: 1.5em 0;
   flex-shrink: 0;
 }
 
@@ -110,23 +110,23 @@ footer {
 .footer-links a {
   color: #fff;
   text-decoration: none;
-  margin-right: 10px;
+  margin-right: 0.8em;
 }
 
 .footer-social-icons a {
   color: #fff;
   text-decoration: none;
-  margin-right: 10px;
+  margin-right: 0.8em;
 }
 
 .footer-text {
   text-align: center;
-  margin-top: 10px;
+  margin-top: 0.8em;
 }
   
 /* ------------------------------------- */
 /* Media Queries */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   h1 {
     font-size: 28px;
   }
@@ -138,5 +138,5 @@ footer {
   .service {
     flex-basis: 100%;
   }
-}
+} */
   
