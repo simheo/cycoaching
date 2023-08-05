@@ -79,13 +79,12 @@ section {
 /* Review cards */
 .review-card-container {
   display: flex;
-  justify-content: center; /* Alignement horizontal au centre */
   align-items: flex-start; /* Alignement vertical en haut */
   overflow-x: auto; /* Permet le défilement horizontal */
   width: 80%; /* Ajuste la largeur selon tes besoins */
 }
 
-.review-wrapper {
+#review-wrapper {
   display: flex;
   padding: 10px; /* Espacement entre les avis */
 }
