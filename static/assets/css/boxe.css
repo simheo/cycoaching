@@ -1,19 +1,5 @@
-.boxe-content {
-    display: flex;
-    margin-top: 50px;
-    justify-content: center;
-    align-items: center;
-  }
-  
-.column-image {
-    flex: 3;
-}
-
-.column-text {
-    flex: 2;
-    margin-left: -10%;
-}
-
+/* --------------------------------------------------------------- */
+/* Common properties */
 .text {
     text-align: left;
     padding: 0 5%;
@@ -24,14 +10,56 @@
     font-weight: bold;
 }
 
-.image-groupe img {
+/* --------------------------------------------------------------- */
+/* Boxing */
+.boxe-content {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.column-image-boxe {
+    flex: 3;
+}
+
+.column-text-boxe {
+    flex: 2;
+    margin-left: -10%;
+}
+
+.image-groupe-boxe img {
     width: 50%; /* Ajustez la largeur selon vos besoins */
     height: auto; /* Maintient le ratio d'aspect de l'image */
 }
 
-.image-solo img {
+.image-solo-boxe img {
     margin-top: 5%;
     width: 35%; /* Ajustez la largeur selon vos besoins */
+    height: auto; /* Maintient le ratio d'aspect de l'image */
+}
+
+/* --------------------------------------------------------------- */
+/* Self defense */
+.self-defense-content {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.column-image-self {
+    flex: 3;
+    margin-left: -5%;
+}
+
+.column-text-self {
+    flex: 2;
+    margin-left: +15%;
+}
+
+.image-self img {
+    width: 40%; /* Ajustez la largeur selon vos besoins */
     height: auto; /* Maintient le ratio d'aspect de l'image */
 }
 
@@ -40,12 +68,13 @@
 .button {
     margin-top: 2%;
     display: inline-block;
-    padding: 10px 20px;
+    padding: 20px 40px;
     background-color: #FF5500;
     color: white;
     text-decoration: none;
     border-radius: 4px;
-    max-width: 300px;
+    max-width: 500px;
+    font-size: 18px
   }
   
   .button:hover {
