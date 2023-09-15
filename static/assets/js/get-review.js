@@ -1,13 +1,13 @@
-// Fonction pour charger et afficher les avis à partir du fichier JSON
+// // Fonction pour charger et afficher les avis à partir du fichier JSON
 async function loadReviews() {
-  // Supposons que vous ayez un élément div avec l'ID "reviews-container" où les avis seront affichés.
-  const reviewsContainer = document.getElementById('review-wrapper');
+  const reviewContainer = document.querySelector('.review-card-container');
+  const reviewsWrapper = document.getElementById('review-wrapper');
+
   try {
     const response = await fetch('static/assets/js/reviews.json'); // Charge le fichier JSON
     const data = await response.json(); // Convertit le JSON en objet JavaScript
 
     data.avis.forEach(avis => {
-      console.log(avis);
       const reviewCard = document.createElement('div');
       reviewCard.classList.add('review-card');
 
@@ -20,7 +20,6 @@ async function loadReviews() {
       const auteurElement = document.createElement('h4');
       auteurElement.textContent = avis.auteur;
       reviewCardInfo.appendChild(auteurElement);
-      
       const ratingElement = document.createElement('div');
       ratingElement.classList.add('rating');
       for (let i = 0; i < avis.note; i++) {
@@ -29,23 +28,28 @@ async function loadReviews() {
         ratingElement.appendChild(starElement);
       }
       reviewCardInfo.appendChild(ratingElement);
-      
       reviewCardHeader.appendChild(reviewCardInfo);
       reviewCard.appendChild(reviewCardHeader);
-      
       const reviewCardContent = document.createElement('div');
       reviewCardContent.classList.add('review-card-content');
-      
       const commentaireElement = document.createElement('p');
-      commentaireElement.textContent = avis.commentaire;
+      var commentaire = avis.commentaire;
+      var commentaireLimite = commentaire.split(" ").slice(0, 40).join(" ");
+
+      if (commentaire.length > commentaireLimite.length) {
+        commentaireLimite += "...";
+      }
+      commentaireElement.textContent = commentaireLimite;
+
       reviewCardContent.appendChild(commentaireElement);
-      
       reviewCard.appendChild(reviewCardContent);
-      
-      reviewsContainer.appendChild(reviewCard);
-      console.log('Card');
+
+      reviewsWrapper.appendChild(reviewCard);
     });
   } catch (error) {
     console.error('Une erreur s\'est produite :', error);
   }
 }
+
+// Appelle la fonction loadReviews pour charger les avis au chargement de la page
+window.onload = loadReviews;

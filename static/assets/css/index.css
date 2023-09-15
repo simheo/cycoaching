@@ -80,9 +80,24 @@ section {
 .review-card-container {
   display: flex;
   align-items: flex-start; /* Alignement vertical en haut */
-  overflow-x: auto; /* Permet le défilement horizontal */
+  /* overflow-x: auto; Permet le défilement horizontal */
   width: 80%; /* Ajuste la largeur selon tes besoins */
+  animation: scrollReviews 30s linear infinite;
 }
+
+.review-card-container:hover {
+  animation-play-state: paused; /* Pause l'animation lorsque survolé */
+}
+
+@keyframes scrollReviews {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 
 #review-wrapper {
   display: flex;
