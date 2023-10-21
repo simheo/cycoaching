@@ -51,11 +51,14 @@ h1, h2, h3 {
 
 header {
   background-color: var(--primary-color);
+  position: -webkit-sticky; /* Pour un soutien Safari */
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 #header-container {
   display: flex;
-  /* justify-content: space-between; */
   align-items: center;
   margin: 0 auto;
 }
@@ -81,6 +84,7 @@ nav ul li a {
 section {
   padding: 2em 1em;
   text-align: center;
+  z-index: 0;
 }
 
 h1 {
@@ -109,35 +113,35 @@ section h2 {
 footer {
   background-color: var(--secondary-background-color);
   color: #fff;
-  padding: 1.5em 0;
-  flex-shrink: 0;
 }
 
 .footer-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  max-width: 800px;
-  margin: 0 auto;
+  margin-left: 20%
 }
 
 .footer-links a {
   color: #fff;
   text-decoration: none;
-  margin-right: 0.8em;
+  margin-right: 1em;
 }
 
 .footer-social-icons a {
   color: #fff;
   text-decoration: none;
-  margin-right: 0.8em;
+  margin-right: 1em;
 }
 
-.footer-text {
+.footer-logo {
   text-align: center;
-  margin-top: 0.8em;
 }
-  
+
+.footer-logo img{
+  width: 35%;
+  height: auto;
+}
+
 /* ------------------------------------- */
 /* Media Queries */
 /* @media (max-width: 768px) {
