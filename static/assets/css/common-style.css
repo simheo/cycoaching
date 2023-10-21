@@ -118,7 +118,8 @@ footer {
 .footer-container {
   display: flex;
   align-items: center;
-  margin-left: 20%
+  justify-content: center;
+  width: 100%;
 }
 
 .footer-links a {
