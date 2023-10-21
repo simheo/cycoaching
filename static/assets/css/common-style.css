@@ -42,9 +42,22 @@ h1, h2, h3 {
   font-family: 'Raleway', sans-serif;
 }
 
+#logo img {
+  float: left;
+  margin-left: 10%;
+  width: 20%;
+  height: auto;
+}
+
 header {
   background-color: var(--primary-color);
-  padding: 0.7em;
+}
+
+#header-container {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  margin: 0 auto;
 }
 
 nav ul {
@@ -60,6 +73,7 @@ nav ul li {
 
 nav ul li a {
   color: #fff;
+  font-size: large;
   text-decoration: none;
   padding: 0.8em;
 }
