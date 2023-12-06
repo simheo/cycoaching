@@ -1,0 +1,39 @@
+header {
+    background-color: var(--primary-color);
+    position: -webkit-sticky; /* Pour un soutien Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+
+  #logo img {
+    float: left;
+    margin-left: 10%;
+    width: 20%;
+    height: auto;
+  }
+
+  #header-container {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 1em;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    font-size: large;
+    text-decoration: none;
+    padding: 0.8em;
+  }
+  
