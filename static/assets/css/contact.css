@@ -31,7 +31,7 @@
 /* --------------------------------------------------------------- */
 /* Style du conteneur principal du formulaire */
   form {
-    max-width: 700px;
+    max-width: 80%;
     margin: 0 auto;
     padding: 20px;
     background-color: var(--secondary-color);
@@ -77,3 +77,33 @@
     border-radius: 4px;
     cursor: pointer;
   }
+
+@media only screen and (max-width: 800px) {
+  .text-contact {
+    text-align: justify;
+  }
+
+  .contact-content {
+    flex-direction: column;
+  }
+
+  .image img {
+    width: 80%;
+    height: auto;
+  }
+
+  .column-image {
+    margin-left: 0px;
+    margin-bottom: 30px;
+    margin-top: -30px;
+  }
+
+  .column-form {
+    margin: 0px;
+    width: 90%;
+  }
+
+  form {
+    max-width: 100%;
+  }
+}
