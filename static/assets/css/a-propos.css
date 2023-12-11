@@ -35,4 +35,22 @@
 .image img {
     width: 70%; /* Ajustez la largeur selon vos besoins */
     height: auto; /* Maintient le ratio d'aspect de l'image */
-  }
+}
+
+@media only screen and (max-width: 800px) {
+    .column-image {
+        margin: 0%;
+    }
+
+    .column-text {
+        margin: 0%;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .image img {
+        width: 100%;
+    }
+}
