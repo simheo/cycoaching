@@ -5,6 +5,7 @@
     <link rel="icon" href="../static/assets/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../static/assets/css/common-style.css"/>
     <link rel="stylesheet" href="../static/assets/css/common-header.css"/>
+    <link rel="stylesheet" href="../static/assets/css/burger-menu.css"/>
     <link rel="stylesheet" href="../static/assets/css/common-footer.css"/>
 
     <link rel="stylesheet" href="../static/assets/css/contact.css"/>
@@ -16,19 +17,38 @@
     <header>
       <div id="header-container">
         <a href="/">
-          <div id="logo">
-              <img src="../static/assets/img/logo-cycoaching.png" alt="logo"/>
-          </div>
+            <div id="logo">
+                <img src="../static/assets/img/logo-cycoaching.png" alt="logo"/>
+            </div>
         </a>
-        <nav>
-            <ul id="menu">
+        <div class="menu-mobile-wrapper">
+            <input type="checkbox" class="toggle" />
+            
+            <div class="hamburger">
+              <div class="bar"></div>
+            </div>
+      
+            <div class="menu menu-mobile">
+              <ul>
                 <li><a href="/">Coaching</a></li>
-                <li><a active href="/boxe">Boxe</a></li>
+                <li><a href="/boxe">Boxe</a></li>
                 <li><a href="/a-propos">Qui suis-je ?</a></li>
                 <li><a href="/tarif">Tarifs</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+                <li><a href="/contact">Contact</a></li>
+              </ul>
+            </div>
+        </div>
+        <div class="menu menu-web">
+            <nav>
+                <ul>
+                    <li><a href="/">Coaching</a></li>
+                    <li><a href="/boxe">Boxe</a></li>
+                    <li><a href="/a-propos">Qui suis-je ?</a></li>
+                    <li><a href="/tarif">Tarifs</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
     </header>
 
