@@ -1,3 +1,7 @@
+#first-h2 {
+    margin-top: 5%;
+}
+
 /* --------------------------------------------------------------- */
 /* Common properties */
 .text {
@@ -48,6 +52,10 @@
 }
 
 @media only screen and (max-width: 800px) {
+    #first-h2 {
+        margin-top: 20%;
+    }
+
     .container-boxe {
         flex-direction: column;
     }

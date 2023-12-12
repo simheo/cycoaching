@@ -5,6 +5,10 @@
   /* margin: 0 auto; */
 }
 
+#first-row {
+  margin-top: 5%;
+}
+
 .column {
   flex: 1;
   padding: 10px;
@@ -68,6 +72,10 @@
 }
 
 @media only screen and (max-width: 800px) {
+  #first-row {
+    margin-top: 25%;
+  }
+
   .image-tarif-web {
     display: none;
   }

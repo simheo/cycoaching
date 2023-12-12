@@ -2,7 +2,11 @@
     display: flex;
     margin-top: 50px;
   }
-  
+
+#first-h2 {
+    margin-top: 5%;
+}
+
 .column-image {
     flex: 1;
     margin-left: 100px;
@@ -40,6 +44,10 @@
 @media only screen and (max-width: 800px) {
     .column-image {
         margin: 0%;
+    }
+
+    #first-h2 {
+        margin-top: 20%;
     }
 
     .column-text {

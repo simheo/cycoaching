@@ -1,3 +1,7 @@
+#first-text {
+  margin-top: 5%;
+}
+
 #contact-form-title {
   color: black
 }
@@ -81,6 +85,10 @@
 @media only screen and (max-width: 800px) {
   .text-contact {
     text-align: justify;
+  }
+
+  #first-text {
+    margin-top: 25%;
   }
 
   .contact-content {
