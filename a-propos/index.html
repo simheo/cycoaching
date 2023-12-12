@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="icon" href="../static/assets/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../static/assets/css/common-style.css"/>
     <link rel="stylesheet" href="../static/assets/css/common-header.css"/>
+    <link rel="stylesheet" href="../static/assets/css/burger-menu.css"/>
     <link rel="stylesheet" href="../static/assets/css/common-footer.css"/>
 
     <link rel="stylesheet" href="../static/assets/css/a-propos.css"/>
@@ -14,22 +15,41 @@
 
 <body>
     <header>
-      <div id="header-container">
-        <a href="/">
-          <div id="logo">
-              <img src="../static/assets/img/logo-cycoaching.png" alt="logo"/>
-          </div>
-        </a>
-        <nav>
-            <ul id="menu">
-                <li><a href="/">Coaching</a></li>
-                <li><a href="/boxe">Boxe</a></li>
-                <li><a active href="#">Qui suis-je ?</a></li>
-                <li><a href="/tarif">Tarifs</a></li>
-                <li><a href="/contact">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
+        <div id="header-container">
+            <a href="/">
+                <div id="logo">
+                    <img src="../static/assets/img/logo-cycoaching.png" alt="logo"/>
+                </div>
+            </a>
+            <div class="menu-mobile-wrapper">
+                <input type="checkbox" class="toggle" />
+                
+                <div class="hamburger">
+                  <div class="bar"></div>
+                </div>
+          
+                <div class="menu menu-mobile">
+                  <ul>
+                    <li><a href="/">Coaching</a></li>
+                    <li><a href="/boxe">Boxe</a></li>
+                    <li><a href="/a-propos">Qui suis-je ?</a></li>
+                    <li><a href="/tarif">Tarifs</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                  </ul>
+                </div>
+            </div>
+            <div class="menu menu-web">
+                <nav>
+                    <ul>
+                        <li><a href="/">Coaching</a></li>
+                        <li><a href="/boxe">Boxe</a></li>
+                        <li><a href="/a-propos">Qui suis-je ?</a></li>
+                        <li><a href="/tarif">Tarifs</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
 
     <div class="content">
@@ -68,12 +88,12 @@
             <a href="/tarif">Tarifs</a>
             <a href="/contact">Contact</a>
           </div>
-          <a href="/">
-            <div class="footer-logo">
+          <div class="footer-logo">
+            <a href="/">
               <img src="../static/assets/img/logo-cycoaching.png" alt="logo"/>
-            </div>
-          </a>
-          <div class="footer-social-icons">
+            </a>
+          </div>
+          <div class="footer-social">
             <a target="_blank" href="https://www.instagram.com/cy.coaching/"><i class="fab fa-instagram"></i> cycoaching</a>
             <a href="#"><i class="fas fa-phone"></i> 0608703251</a>
           </div>

@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="icon" href="../static/assets/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../static/assets/css/common-style.css"/>
     <link rel="stylesheet" href="../static/assets/css/common-header.css"/>
+    <link rel="stylesheet" href="../static/assets/css/burger-menu.css"/>
     <link rel="stylesheet" href="../static/assets/css/common-footer.css"/>
 
     <link rel="stylesheet" href="../static/assets/css/contact.css"/>
@@ -16,28 +17,47 @@
     <header>
       <div id="header-container">
         <a href="/">
-          <div id="logo">
-              <img src="../static/assets/img/logo-cycoaching.png" alt="logo"/>
-          </div>
+            <div id="logo">
+                <img src="../static/assets/img/logo-cycoaching.png" alt="logo"/>
+            </div>
         </a>
-        <nav>
-            <ul id="menu">
+        <div class="menu-mobile-wrapper">
+            <input type="checkbox" class="toggle" />
+            
+            <div class="hamburger">
+              <div class="bar"></div>
+            </div>
+      
+            <div class="menu menu-mobile">
+              <ul>
                 <li><a href="/">Coaching</a></li>
-                <li><a active href="/boxe">Boxe</a></li>
+                <li><a href="/boxe">Boxe</a></li>
                 <li><a href="/a-propos">Qui suis-je ?</a></li>
                 <li><a href="/tarif">Tarifs</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+                <li><a href="/contact">Contact</a></li>
+              </ul>
+            </div>
+        </div>
+        <div class="menu menu-web">
+            <nav>
+                <ul>
+                    <li><a href="/">Coaching</a></li>
+                    <li><a href="/boxe">Boxe</a></li>
+                    <li><a href="/a-propos">Qui suis-je ?</a></li>
+                    <li><a href="/tarif">Tarifs</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
     </header>
 
     <div class="content">
-      <section>
+      <section class="text-contact">
         <div class="text">
           <p>Je suis disponible pour du coaching à domicile ou en salle.</p>
           <p>Si tu souhaites progresser et t'épanouir dans une pratique sportive ludique et personnalisée, contacte moi ! </br>
-          Tu peux me contacter au 0608703251 ou en remplissant le formulaire de contact, je m'engage à te répondre dans les plus bref délais.</p>
+          Tu peux me contacter au <span class="bold">0608703251</span> ou en remplissant le formulaire de contact, je m'engage à te répondre dans les plus bref délais.</p>
           <p>À bientôt !</p>
         </div>
       </section>
@@ -90,15 +110,16 @@
             <a href="/tarif">Tarifs</a>
             <a href="#">Contact</a>
           </div>
-          <a href="/">
-            <div class="footer-logo">
+          <div class="footer-logo">
+            <a href="/">
               <img src="../static/assets/img/logo-cycoaching.png" alt="logo"/>
-            </div>
-          </a>
-          <div class="footer-social-icons">
+            </a>
+          </div>
+          <div class="footer-social">
             <a target="_blank" href="https://www.instagram.com/cy.coaching/"><i class="fab fa-instagram"></i> cycoaching</a>
             <a href="#"><i class="fas fa-phone"></i> 0608703251</a>
           </div>
+        </div>
         </div>
     </footer>
 </body>
