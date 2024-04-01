@@ -5,6 +5,11 @@
   /* margin: 0 auto; */
 }
 
+h2 {
+  margin-top: 7%;
+  margin-bottom: 20px;
+}
+
 #first-row {
   margin-top: 5%;
 }
@@ -91,6 +96,10 @@
 
   .card {
     width: 80%;
+  }
+
+  h2 {
+    margin-top: 20%;
   }
 }
 
