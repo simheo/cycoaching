@@ -3,6 +3,10 @@
     margin-top: 50px;
   }
 
+h3 {
+    color: var(--primary-color);
+}
+
 #first-h2 {
     margin-top: 5%;
 }
